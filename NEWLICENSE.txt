@@ -1,0 +1,43 @@
+						Promisance Public License Agreement
+							  Revision 03.11.2002
+
+The latest version of this file will be available at http://promisance.sf.net/license.txt. (Mirrors of this file are
+permitted)
+
+The code contained herein is the properly of PC Purgett ("Author") and any other contributing parties (outlined as such
+in the "Credits" while logged in or the "CREDITS" file available in this archive).
+
+Use of this code on any remote system or server is required to abide by the following guidelines or termination of the
+agreement will ensure and possible legal recourse be taken. Any modifications to this document can only be completed by
+the Author and will be available at the URL stated above and will be considered in effect immediately upon the
+updated agreement posting.
+
+Guidelines for use of the Promisance source code included in this archive:
+* You are permitted to use this code on as many servers as you wish for as many versions of the game as you wish.
+  In short: Feel free to make as many games as you want on as many servers as you want.  The more you have, the
+  more power to you.
+* You are NOT permitted to remove any portion of the "CREDITS" file or "credits.php" file.  You MAY, however, add
+  your own information into this file if you wish or modify the layout for customization, removal of current
+  information revokes your license to the source code.
+  In short: Give credit where credit is due, or else.
+* Modifications of the source code must be re-distributed as a whole (unless there are licensed libraries involved
+  that would violate those individual license agreements to re-distribute) and must include the "CREDITS" file.
+  In short: If you alter the code, you have to let other people see it too.
+* The Author reserves the right to limit release of the source and to revoke this license agreement for another
+  at any time, for this version, any previous version, or any future version.  This license agreement also stands
+  for any future version of the project.  Promisance releases under the GNU General Public License will stay that way.
+  Any version after 4.0 (February 1, 2002) is per this license.
+  In short: While it probably won't happen, if I decide to close the source and/or limit it to certain people, I can.
+* Any new archives created MUST include the "CREDITS" file, this license agreement (named either "license" or "copying",
+  case insensitive), and an installation file (either named "readme" or "install", case insensitive).  ".txt"
+  or ".doc" extensions on these file names is also permitted.
+* All copyright information must remain intact.  If you wish to add your own, that is permitted.  However, the current
+  copyright information must NOT be altered.
+* Maximum amount of liability toward use of this source code is $.01 United States
+* This source and license is governed under the State of Wisconsin in the United States of America and abides 
+  by those laws as such.  If I have made an oversight, it will be rememdied immediately.
+
+This source code is licensed, not sold or given away, for all to benefit from each other's work.  Official releases
+will be available at http://promisance.sf.net.  Revision numbers will be based on the date in which it is revised in
+the following format (MM.DD.YYYY - Example: 03.11.2002).  This is a document in development and can be changed at any
+time.

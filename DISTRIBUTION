@@ -1,0 +1,21 @@
+Getting official releases of Promisance
+---------------------------------------
+
+Visit http://www.promisance.com for the latest official release
+and the latest beta version of Promisance!
+
+promisance.asp - Primary Promisance script
+rank.cgi - Figures out alliance rankings (meant to run as cron job)
+turns.cgi - Adds 1 turn for every player (cron job)
+scoreup.cgi - Figures out ranking (cron job)
+master.cgi - The master cgi script, need this file for the cron jobs
+config.cgi - Configuration screen
+email.cgi - Sends out an e-mail to the player when they signup
+policy.cgi - Policies page
+ads.cgi - Ad Script
+*.ISD, *.ISM, *.frm files - These are the MySQL files, move them into your
+ MySQL data directory (/var/lib/mysql/Promisance?)
+
+Remember, if you touch the 'promisance.asp' file, you MUST leave the
+copyright notice intact.  If you don't, I will personally hunt you down, I
+worked for over 9 months on this sucker so at least show some credit.

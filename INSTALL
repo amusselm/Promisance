@@ -1,0 +1,76 @@
+To install Promisance, you will need:
+
+1. A webserver (Apache is preferred)
+2. PHP4 version 4.0.5 or greater; you may use a module for your
+   webserver, but the CGI binary is required for the turns script
+3. PHP GD library 1.8 or greater for the '# players registered' image
+   generator
+4. MySQL version 3.23.36 or greater
+5. Knowledge necessary to configure crontab jobs.
+
+Installing Promisance can be done in nine easy steps:
+
+1. Extract Promisance to its own path, one visible from your web
+   server.
+
+2. If you wish to add new races or eras, edit prom.sql to your liking.
+   Note that if you wish to add additional eras, you must also edit:
+   * funcs.php:      line 201, to define exploration multipliers
+                     line 252, to define any era bonuses while taking
+                               turns
+   * magicfun.php:   line 87, to define the magic spell names
+   * promisance.css: line 119, to define the era-specific colors
+
+3. Create a MySQL database for Promisance.
+   If you cannot create a database (e.g. you do not have permission),
+   you may rename the SQL tables by editing prom.sql and const.php
+   accordingly.
+
+4. Create the MySQL tables:
+   $ mysql -uusername -p[password] databasename <prom.sql
+
+5. Edit const.php to your liking (taking care to set the database
+   host/login/password variables)
+
+6. Browse to the folder in which you have installed Promisance.
+   Click the 'Signup' link and create your account.
+   You will be given the following privileges:
+   * 'Set User' to any other user in the game.
+   * User Administration - check for multis, disable/delete accounts,
+     etc.
+   * Clan Administration - edit any clan as if you are the founder.
+   * View Empire Communications - filter through all messages sent
+     in-game; this is ideal for bringing attention to usage of
+     profanity or any other violations of game rules.
+
+7. Copy the following text into the public page from which you will
+   allow users to create accounts and log into Promisance:
+
+<img style="background-color:white;width:48px;height:16px" src="/promisance/promisance.php?action=count&amp;digits=3&amp;style=1" alt="[num]"> Players Registered<br>
+<form method="post" action="/promisance/promisance.php?action=login">
+<div>
+Username: <input type="text" name="login_username" size="8"><br>
+Password: <input type="password" name="login_password" size="8"><br>
+<input type="submit" name="do_login" value="Login">
+</div>
+</form>
+<a href="/promisance/promisance.php?action=signup"><b>- Create Empire -</b></a><br>
+<a href="/promisance/promisance.php?action=top10"><b>- Top 10 Players -</b></a><br>
+
+8. Make a crontab entry to run the turns script:
+   "/usr/local/bin/php turns.php"
+   substituting the proper path to the PHP CGI binary.
+   Schedule it according to the settings you chose in const.php.
+
+9. If you wish to use the game's directory as a front page, you may
+   edit index.php, removing the Header("...") command and replacing it
+   with code to generate your own front page.
+
+Notes:
+    The first account created is given administrative privileges.
+It is flagged such that other empires are not capable of attacking or
+sending aid to you.  As such, you will also be unable to access the war
+center and you will not be allowed to join clans.
+    Through User Administration, you may appoint other users to be
+administrators, giving them the same abilities and restrictions as
+you.
